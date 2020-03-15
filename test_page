@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> PandaZoo </h1>
+
+<p> At PandaZoo we use single quote for our answers. </p>
+
+<h2> Question 1 </h2>
+<p> Import pandas </p>
+
+<input type="text" id="test">
+<input type="button" value="click" onclick="z()"><span id="err"></span>
+
+<script>
+function z()
+{
+var a=document.getElementById("test");
+if((a.value=="import pandas as pd")||(a.value=="import pandas"))
+{
+document.getElementById('err').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+
+<h2> Question 2 </h2>
+<p> Import numpy </p>
+
+<input type="text2" id="test2">
+<input type="button" value="click" onclick="zz()"><span id="err2"></span>
+
+<script>
+function zz()
+{
+var a=document.getElementById("test2");
+if((a.value=="import numpy as np")||(a.value=="import numpy"))
+{
+document.getElementById('err2').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err2').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+
+<h2> Question 3 </h2>
+<p> Import matplotlib.pyplot </p>
+
+<input type="text3" id="test3">
+<input type="button" value="click" onclick="zzz()"><span id="err3"></span>
+
+<script>
+function zzz()
+{
+var a=document.getElementById("test3");
+if((a.value=="import matplotlib.pyplot as plt")||(a.value=="import matplotlib.pyplot"))
+{
+document.getElementById('err3').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err3').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+<h2> Question 4 </h2>
+<p> Read in the titanic3.xls data set, tab is titanic3, make NAs 'NA', and call it titanic_df. </p>
+
+<input type="text4" id="test4">
+<input type="button" value="click" onclick="zzzz()"><span id="err4"></span>
+
+<script>
+function zzzz()
+{
+var a=document.getElementById("test4");
+if((a.value=="titanic_df = pd.read_excel('titanic3.xls', 'titanic3', index_col=None, na_values=['NA'])")||(a.value=="titanic_df = pd.read_excel('titanic3.xls','titanic3',index_col=None,na_values=['NA'])"))
+{
+document.getElementById('err4').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err4').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+<h2> Question 5 </h2>
+<p> Use head function to look at the titanic_df dataset. </p>
+
+<input type="text5" id="test5">
+<input type="button" value="click" onclick="zzzzz()"><span id="err5"></span>
+
+<script>
+function zzzzz()
+{
+var a=document.getElementById("test5");
+if((a.value=="titanic_df.head()")||(a.value=="titanic_df.head()"))
+{
+document.getElementById('err5').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err5').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+
+<h2> Question 6 </h2>
+<p> Use describe function to learn more about the titanic_df dataset. </p>
+
+<input type="text6" id="test6">
+<input type="button" value="click" onclick="z6()"><span id="err6"></span>
+
+<script>
+function z6()
+{
+var a=document.getElementById("test6");
+if((a.value=="titanic_df.describe()")||(a.value=="titanic_df.describe()"))
+{
+document.getElementById('err6').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err6').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+
+
+<h2> Question 7 </h2>
+<p> Drop the 'ticket', 'cabin', 'boat', and 'body' columns from the titanic_df data set. </p>
+
+<input type="text7" id="test7">
+<input type="button" value="click" onclick="z7()"><span id="err7"></span>
+
+<script>
+function z7()
+{
+var a=document.getElementById("test7");
+if((a.value=="titanic_df = titanic_df.drop(['ticket','cabin','boat','body'],axis=1)")||(a.value=="titanic_df = titanic_df.drop(['ticket','cabin','boat','body'], axis=1)"))
+{
+document.getElementById('err7').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err7').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+
+<h2> Question 8 </h2>
+<p> Let's make a bar plot on the survived column using value counts. </p>
+
+<input type="text8" id="test8">
+<input type="button" value="click" onclick="z8()"><span id="err8"></span>
+
+<script>
+function z8()
+{
+var a=document.getElementById("test8");
+if((a.value=="pd.value_counts(titanic_df['survived']).plot.bar()")||(a.value=="pd.value_counts(titanic_df['survived']).plot.bar()"))
+{
+document.getElementById('err8').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err8').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+
+<h2> Question 9 </h2>
+<p> Let's have a look at the mean of the people that survived, i.e the 'survived' column. </p>
+
+<input type="text9" id="test9">
+<input type="button" value="click" onclick="z9()"><span id="err9"></span>
+
+<script>
+function z9()
+{
+var a=document.getElementById("test9");
+if((a.value=="titanic_df['survived'].mean()")||(a.value=="titanic_df['survived'].mean()"))
+{
+document.getElementById('err9').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err9').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+
+<h2> Question 10 </h2>
+<p> Let's group our data by the sex of the passenger and see what the means are. </p>
+
+<input type="text10" id="test10">
+<input type="button" value="click" onclick="z10()"><span id="err10"></span>
+
+<script>
+function z10()
+{
+var a=document.getElementById("test10");
+if((a.value=="titanic_df.groupby(['sex']).mean()")||(a.value=="titanic_df.groupby(['sex']).mean()"))
+{
+document.getElementById('err10').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err10').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+<h2> Question 11 </h2>
+<p> Let's group the data by sex and class of the passenger and see what the means are. </p>
+
+<input type="text11" id="test11">
+<input type="button" value="click" onclick="z11()"><span id="err11"></span>
+
+<script>
+function z11()
+{
+var a=document.getElementById("test11");
+if((a.value=="titanic_df.groupby(['sex','pclass']).mean()")||(a.value=="titanic_df.groupby(['sex', 'pclass']).mean()"))
+{
+document.getElementById('err11').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err11').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+
+<h2> Question 12 </h2>
+<p> Let's look at the sex and the class but only look at those under 18 years old and see what the means are. </p>
+
+<input type="text12" id="test12">
+<input type="button" value="click" onclick="z12()"><span id="err12"></span>
+
+<script>
+function z12()
+{
+var a=document.getElementById("test12");
+if((a.value=="titanic_df[titanic_df['age']<18].groupby(['sex','pclass']).mean()")||(a.value=="titanic_df[titanic_df['age'] < 18].groupby(['sex', 'pclass']).mean()"))
+{
+document.getElementById('err12').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err12').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+
+</body>
+</html>
