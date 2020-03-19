@@ -103,7 +103,7 @@
             
 <p> The first tutorial is using the Titanic data set. It is an Excel file called titanic3.xls. The only tab is called <i>titanic3</i>.</p>
 <p> The questions we use for this tutorial are based on the titanic3 dataset, which can be found 
-<a href="https://www.kaggle.com/ibooth1/titanic3/data">here</a>
+<a href="https://www.kaggle.com/ibooth1/titanic3/data" target="_blank">here</a>
  </p>
  <p> This is a sample of what the titanic3 data set looks like: </p>
  <table border="1" class="dataframe">
@@ -295,7 +295,8 @@ document.getElementById('err3').innerHTML= 'wrong';
 <h2> Question 4 </h2>
 <p> Read in the titanic3.xls data set. The only tab is called  <i>titanic3</i>. Make sure NAs are labeled 'NA'. </p> 
 <p> When you read in the DateFrame, call it <i>titanic_df</i>. Also, make sure index_col is set to None. </p>
-
+<p> The order we want the <i>read_excel</i> function is: file name, tab name, index_col, and na_values. </p>
+<p> <i>Hint: You can find official doucmentation for read_excel <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html" target="_blank"> here</a> </i></p>
 <input type="text4" id="test4">
 <input type="button" value="click" onclick="zzzz()" class="btn btn-outline-primary btn-md"><span id="err4"></span>
 
@@ -536,7 +537,7 @@ document.getElementById('err12').innerHTML= 'wrong';
             <div class="row mb-5">
               <div class="col-12">
                 <h3 class="footer-heading mb-4">About Us</h3>
-                <p>PandasZoo is a place to practice Python and Pandas. Created by Peter Brendan to scratch his own itch. Feel free to contact him for suggests or recommended edits. </p>
+                <p>PandasZoo is a place to practice Python and Pandas. Created by Peter Brendan to scratch his own itch. Feel free to <a href="mailto:peteribrendan@gmail.com?Subject=Howdy">contact him</a> for suggestions or recommended edits. </p>
               </div>
             </div>
             
@@ -566,10 +567,10 @@ document.getElementById('err12').innerHTML= 'wrong';
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <div class="mb-4">
-                  <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                  <a href="https://twitter.com/peteriBrendan" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                  <a href="https://www.linkedin.com/in/peter-brendan-3b31a722" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                  <a href="https://twitter.com/peteriBrendan" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                  <a href="https://www.linkedin.com/in/peter-brendan-3b31a722" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
                 </div>
           </div>
           
