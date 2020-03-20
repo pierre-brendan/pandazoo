@@ -220,7 +220,7 @@
 <p> Import the pandas module. </p>
 <p> <i>Hint: We put in an example answer that you should try typing in.</i></p>
 
-<input type="text" id="test" placeholder="import pandas as pd">
+<input type="text" id="test" placeholder="import pandas as pd"  size="25">
 <input type="button" value="click" onclick="z()" class="btn btn-outline-primary btn-md"><span id="err"></span>
 
 <script>
@@ -245,7 +245,7 @@ document.getElementById('err').innerHTML= 'wrong';
 <h2> Question 2 </h2>
 <p> Import the numpy module. </p>
 
-<input type="text2" id="test2">
+<input type="text2" id="test2" size="25">
 <input type="button" value="click" onclick="zz()" class="btn btn-outline-primary btn-md"><span id="err2"></span>
 
 <script>
@@ -270,7 +270,7 @@ document.getElementById('err2').innerHTML= 'wrong';
 <h2> Question 3 </h2>
 <p> Import the matplotlib.pyplot module. </p>
 
-<input type="text3" id="test3">
+<input type="text3" id="test3" size="25">
 <input type="button" value="click" onclick="zzz()" class="btn btn-outline-primary btn-md"><span id="err3"></span>
 
 <script>
@@ -297,14 +297,14 @@ document.getElementById('err3').innerHTML= 'wrong';
 <p> When you read in the DateFrame, call it <i>titanic_df</i>. Also, make sure index_col is set to None. </p>
 <p> The order we want the <i>read_excel</i> function is: file name, tab name, index_col, and na_values. </p>
 <p> <i>Hint: You can find official doucmentation for read_excel <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html" target="_blank"> here</a> </i></p>
-<input type="text4" id="test4">
+<input type="text4" id="test4" size="25">
 <input type="button" value="click" onclick="zzzz()" class="btn btn-outline-primary btn-md"><span id="err4"></span>
 
 <script>
 function zzzz()
 {
 var a=document.getElementById("test4");
-if((a.value=="titanic_df = pd.read_excel('titanic3.xls', 'titanic3', index_col=None, na_values=['NA'])")||(a.value=="titanic_df = pd.read_excel('titanic3.xls','titanic3',index_col=None,na_values=['NA'])"))
+if((a.value=="titanic_df = pd.read_excel('titanic3.xls', 'titanic3', index_col=None, na_values=['NA'])")||(a.value=="titanic_df = pd.read_excel('titanic3.xls','titanic3',index_col=None,na_values=['NA'])")||(a.value=="titanic_df=pd.read_excel('titanic3.xls','titanic3',index_col=None,na_values=['NA'])"))
 {
 document.getElementById('err4').innerHTML= 'correct';
 }
@@ -322,7 +322,7 @@ document.getElementById('err4').innerHTML= 'wrong';
 <h2> Question 5 </h2>
 <p> Use the head function to look at the <i>titanic_df</i> DataFrame. </p>
 
-<input type="text5" id="test5">
+<input type="text5" id="test5" size="25">
 <input type="button" value="click" onclick="zzzzz()" class="btn btn-outline-primary btn-md"><span id="err5"></span>
 
 <script>
@@ -347,7 +347,7 @@ document.getElementById('err5').innerHTML= 'wrong';
 <h2> Question 6 </h2>
 <p> Use the describe function to learn more about the <i>titanic_df</i> dataset. </p>
 
-<input type="text6" id="test6">
+<input type="text6" id="test6" size="25">
 <input type="button" value="click" onclick="z6()" class="btn btn-outline-primary btn-md"><span id="err6"></span>
 
 <script>
@@ -373,14 +373,14 @@ document.getElementById('err6').innerHTML= 'wrong';
 <h2> Question 7 </h2>
 <p> Drop the 'ticket', 'cabin', 'boat', and 'body' columns from the <i>titanic_df</i> DateFrame. </p>
 
-<input type="text7" id="test7">
+<input type="text7" id="test7" size="25">
 <input type="button" value="click" onclick="z7()" class="btn btn-outline-primary btn-md"><span id="err7"></span>
 
 <script>
 function z7()
 {
 var a=document.getElementById("test7");
-if((a.value=="titanic_df = titanic_df.drop(['ticket','cabin','boat','body'],axis=1)")||(a.value=="titanic_df = titanic_df.drop(['ticket','cabin','boat','body'], axis=1)"))
+if((a.value=="titanic_df = titanic_df.drop(['ticket','cabin','boat','body'],axis=1)")||(a.value=="titanic_df = titanic_df.drop(['ticket','cabin','boat','body'], axis = 1)")||(a.value=="titanic_df=titanic_df.drop(['ticket','cabin','boat','body'],axis=1)"))
 {
 document.getElementById('err7').innerHTML= 'correct';
 }
@@ -399,7 +399,7 @@ document.getElementById('err7').innerHTML= 'wrong';
 <p> Let's make a bar plot using pandas on the 'survived' column using value counts. </p>
 <p><i> Hint: we refer to pandas as pd </i> </p>
 
-<input type="text8" id="test8">
+<input type="text8" id="test8" size="25">
 <input type="button" value="click" onclick="z8()" class="btn btn-outline-primary btn-md"><span id="err8"></span>
 
 <script>
@@ -425,7 +425,7 @@ document.getElementById('err8').innerHTML= 'wrong';
 <p> Let's have a look at the mean of the people that survived, i.e the 'survived' column. </p>
 <p><i> Hint: Don't make an object.</i> </p>
 
-<input type="text9" id="test9">
+<input type="text9" id="test9" size="25">
 <input type="button" value="click" onclick="z9()" class="btn btn-outline-primary btn-md"><span id="err9"></span>
 
 <script>
@@ -450,7 +450,7 @@ document.getElementById('err9').innerHTML= 'wrong';
 <h2> Question 10 </h2>
 <p> Let's group our data by the sex of the passenger and see what the means are. </p>
 <p><i> Hint: Don't make an object.</i> </p>
-<input type="text10" id="test10">
+<input type="text10" id="test10" size="25">
 <input type="button" value="click" onclick="z10()" class="btn btn-outline-primary btn-md"><span id="err10"></span>
 
 <script>
@@ -477,7 +477,7 @@ document.getElementById('err10').innerHTML= 'wrong';
 <p><i> Hint: Don't make an object.</i> </p>
 <p><i> Another Hint: 'pclass' is the class column. </i> </p>
 
-<input type="text11" id="test11">
+<input type="text11" id="test11" size="25">
 <input type="button" value="click" onclick="z11()" class="btn btn-outline-primary btn-md"><span id="err11"></span>
 
 <script>
@@ -504,7 +504,7 @@ document.getElementById('err11').innerHTML= 'wrong';
 <p> Let's look at the sex and the class but only look at those under 18 years old and see what the means are. </p>
 <p><i> Hint: Don't make an object and do this in one line of code.</i> </p>
 
-<input type="text12" id="test12">
+<input type="text12" id="test12" size="25">
 <input type="button" value="click" onclick="z12()" class="btn btn-outline-primary btn-md"><span id="err12"></span>
 
 <script>
