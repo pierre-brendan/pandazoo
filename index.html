@@ -56,7 +56,7 @@
                   </a></div>
 
                   <ul class="site-menu main-menu js-clone-nav d-none d-lg-none">
-                    <li><a href="#home-section" class="nav-link">Home</a></li>
+                    <li><a href="" class="nav-link">Home</a></li>
                     <li><a href="#what-we-do-section" class="nav-link">Titanic Tutorial</a></li>
                      <!-- <li><a href="#about-section" class="nav-link">About Us</a></li>
                     <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
@@ -295,7 +295,7 @@ document.getElementById('err3').innerHTML= 'wrong';
 <br> </br>
 <h2> Question 4 </h2>
 <p> Read in the titanic3.xls data set. The only tab is called  <i>titanic3</i>. Make sure NAs are labeled 'NA'. </p> 
-<p> When you read in the DateFrame, call it <i>titanic_df</i>. Also, make sure index_col is set to None. </p>
+<p> When you read in the dataframe, call it <i>titanic_df</i>. Also, make sure index_col is set to None. </p>
 <p> The order we want the <i>read_excel</i> function is: filename, tab name, index_col, and na_values. </p>
 <p> <i>Hint: We refer to Pandas as pd. You can find official documentation for read_excel <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html" target="_blank"> here</a> </i></p>
 <input type="text4" id="test4" size="25">
@@ -305,7 +305,7 @@ document.getElementById('err3').innerHTML= 'wrong';
 function zzzz()
 {
 var a=document.getElementById("test4");
-if((a.value=="titanic_df = pd.read_excel('titanic3.xls', 'titanic3', index_col=None, na_values=['NA'])")||(a.value=="titanic_df = pd.read_excel('titanic3.xls','titanic3',index_col=None,na_values=['NA'])")||(a.value=="titanic_df=pd.read_excel('titanic3.xls','titanic3',index_col=None,na_values=['NA'])"))
+if((a.value=="titanic_df = pd.read_excel('titanic3.xls', 'titanic3', index_col=None, na_values=['NA'])")||(a.value=="titanic_df = pd.read_excel('titanic3.xls','titanic3',index_col=None,na_values=['NA'])")||(a.value=="titanic_df=pd.read_excel('titanic3.xls','titanic3',index_col=None,na_values=['NA'])")||(a.value=="titanic_df=pd.read_excel('titanic3.xls', 'titanic3', index_col=None, na_values=['NA'])"))
 {
 document.getElementById('err4').innerHTML= 'correct';
 }
@@ -372,7 +372,7 @@ document.getElementById('err6').innerHTML= 'wrong';
 <br> </br>
 <br> </br>
 <h2> Question 7 </h2>
-<p> Drop the 'ticket', 'cabin', 'boat', and 'body' columns from the <i>titanic_df</i> DateFrame. </p>
+<p> Drop the 'ticket', 'cabin', 'boat', and 'body' columns in this order from the <i>titanic_df</i> dataframe. </p>
 
 <input type="text7" id="test7" size="25">
 <input type="button" value="click" onclick="z7()" class="btn btn-outline-primary btn-md"><span id="err7"></span>
@@ -381,7 +381,7 @@ document.getElementById('err6').innerHTML= 'wrong';
 function z7()
 {
 var a=document.getElementById("test7");
-if((a.value=="titanic_df = titanic_df.drop(['ticket','cabin','boat','body'],axis=1)")||(a.value=="titanic_df = titanic_df.drop(['ticket','cabin','boat','body'], axis = 1)")||(a.value=="titanic_df=titanic_df.drop(['ticket','cabin','boat','body'],axis=1)"))
+if((a.value=="titanic_df = titanic_df.drop(['ticket','cabin','boat','body'],axis=1)")||(a.value=="titanic_df = titanic_df.drop(['ticket','cabin','boat','body'], axis = 1)")||(a.value=="titanic_df=titanic_df.drop(['ticket','cabin','boat','body'],axis=1)")||(a.value=="titanic_df = titanic_df.drop(['ticket','cabin','boat','body'], axis=1)"))
 {
 document.getElementById('err7').innerHTML= 'correct';
 }
@@ -474,7 +474,7 @@ document.getElementById('err10').innerHTML= 'wrong';
 <br> </br>
 <br> </br>
 <h2> Question 11 </h2>
-<p> Let's group the data by sex and class of the passenger and see what the means are. </p>
+<p> Let's group the data by sex and class of the passenger in that order and see what the means are. </p>
 <p><i> Hint: Don't make an object.</i> </p>
 <p><i> Another Hint: 'pclass' is the class column. </i> </p>
 
@@ -502,8 +502,9 @@ document.getElementById('err11').innerHTML= 'wrong';
 <br> </br>
 <br> </br>
 <h2> Question 12 </h2>
-<p> Let's look at the sex and the class but only look at those under 18 years old and see what the means are. </p>
+<p> Let's look at the sex and the class in but only look at those under 18 years old and see what the means are. </p>
 <p><i> Hint: Don't make an object and do this in one line of code.</i> </p>
+<p><i> Hint: The group by order should be sex then class.</i> </p>
 
 <input type="text12" id="test12" size="25">
 <input type="button" value="click" onclick="z12()" class="btn btn-outline-primary btn-md"><span id="err12"></span>
