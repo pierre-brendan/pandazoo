@@ -56,10 +56,10 @@
                   </a></div>
 
                   <ul class="site-menu main-menu js-clone-nav d-none d-lg-none">
-                    <li><a href="" class="nav-link">Home</a></li>
-                    <li><a href="#what-we-do-section" class="nav-link">Titanic Tutorial</a></li>
-                    <li><a href="https://www.pandaszoo.com/cycling.html" class="nav-link">Cycling Tutorial</a></li>
-                    <!--<li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
+                    <li><a href="https://www.pandaszoo.com" class="nav-link">Home</a></li>
+                    <li><a href="https://www.pandaszoo.com/#what-we-do-section" class="nav-link">Titanic Tutorial</a></li>
+                    <li><a href="#cycling" class="nav-link">Cycling Tutorial</a></li>
+                   <!-- <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
                     <li><a href="#studio-section" class="nav-link">Gallery</a></li>
                     <li><a href="#contact-section" class="nav-link">Contact</a></li> -->
                   </ul>
@@ -71,151 +71,104 @@
       </div>
     </div> <!-- END .site-navbar-wrap -->
     
-    <div class="site-blocks-cover" id="about-section">
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 ml-auto align-self-center">
-            <div class="intro">
-              <div class="heading">
-                <h1>PandasZoo</h1>
-              </div>
-              <div class="text">
-                <p class="sub-text mb-5">Pandas Python Tutorial: Learn Pandas and Python in stages </p>
-                <p><a href="#what-we-do-section" target="_blank" class="btn btn-outline-primary btn-md">Let's get started!</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> <!-- END .site-blocks-cover -->
 
-    <div class="site-section" id="what-we-do-section">
+    <div class="site-section" id="cycling">
       <div class="container">
         <div class="row mb-5">
           <div class="col-lg-6 section-title">
             <span class="sub-title mb-2 d-block">Pandas Tutorials</span>
-            <h2 class="title text-primary">Pandas Tutorial 1 - Titanic data set.</h2>
+            <h2 class="title text-primary">Pandas Tutorial 2 - UCI Cycling data set.</h2>
           </div>
         </div>
         <div class="pr-lg-5">
-            <h3>Pandas Basics: Titanic exercises</h3>
+            <h3>Pandas Basics: Multiple data sets exercises</h3>
             
-<p> The first tutorial is using the Titanic data set. It is an Excel file called titanic3.xls. The only tab is called <i>titanic3</i>.</p>
-<p> The questions we use for this tutorial are based on the titanic3 dataset, which can be found 
-<a href="https://www.kaggle.com/ibooth1/titanic3/data" target="_blank">here</a>
+<p> The second tutorial is using two UCI cycing data sets. They are two CSVs.</p>
+<p> The questions we use for this tutorial are based on two different years of UCI Men's Cyclo-Cross dataset, which can be found 
+<a href="https://www.uci.org/cyclo-cross/rankings" target="_blank">here</a> and clicking individual rankings.
  </p>
  <p> Note: At PandasZoo we use single quotes for our answers. </p>
- <p> This is a sample of what the titanic3 data set looks like: </p>
- <table border="1" class="dataframe">
+ <p> This is a sample of what the data set looks like: </p>
+<table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>pclass</th>
-      <th>survived</th>
-      <th>name</th>
-      <th>sex</th>
-      <th>age</th>
-      <th>sibsp</th>
-      <th>parch</th>
-      <th>ticket</th>
-      <th>fare</th>
-      <th>cabin</th>
-      <th>embarked</th>
-      <th>boat</th>
-      <th>body</th>
-      <th>home.dest</th>
+      <th>Rank</th>
+      <th>UCI ID</th>
+      <th>Name</th>
+      <th>Nationality</th>
+      <th>Team Code</th>
+      <th>Age</th>
+      <th>Points</th>
+      <th>year</th>
+      <th>type</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
       <td>1</td>
-      <td>1</td>
-      <td>Allen, Miss. Elisabeth Walton</td>
-      <td>female</td>
-      <td>29.0000</td>
-      <td>0</td>
-      <td>0</td>
-      <td>24160</td>
-      <td>211.3375</td>
-      <td>B5</td>
-      <td>S</td>
-      <td>2</td>
-      <td>NaN</td>
-      <td>St Louis, MO</td>
+      <td>10007946203</td>
+      <td>VAN DER POEL Mathieu</td>
+      <td>NETHERLANDS</td>
+      <td>CCU</td>
+      <td>24</td>
+      <td>2600</td>
+      <td>2019</td>
+      <td>cyclocross</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>1</td>
-      <td>1</td>
-      <td>Allison, Master. Hudson Trevor</td>
-      <td>male</td>
-      <td>0.9167</td>
-      <td>1</td>
       <td>2</td>
-      <td>113781</td>
-      <td>151.5500</td>
-      <td>C22 C26</td>
-      <td>S</td>
-      <td>11</td>
+      <td>10007585986</td>
+      <td>VAN AERT Wout</td>
+      <td>BELGIUM</td>
       <td>NaN</td>
-      <td>Montreal, PQ / Chesterville, ON</td>
+      <td>25</td>
+      <td>2452</td>
+      <td>2019</td>
+      <td>cyclocross</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>1</td>
-      <td>0</td>
-      <td>Allison, Miss. Helen Loraine</td>
-      <td>female</td>
-      <td>2.0000</td>
-      <td>1</td>
-      <td>2</td>
-      <td>113781</td>
-      <td>151.5500</td>
-      <td>C22 C26</td>
-      <td>S</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Montreal, PQ / Chesterville, ON</td>
+      <td>3</td>
+      <td>10007586087</td>
+      <td>AERTS Toon</td>
+      <td>BELGIUM</td>
+      <td>TFL</td>
+      <td>26</td>
+      <td>2415</td>
+      <td>2019</td>
+      <td>cyclocross</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>1</td>
-      <td>0</td>
-      <td>Allison, Mr. Hudson Joshua Creighton</td>
-      <td>male</td>
-      <td>30.0000</td>
-      <td>1</td>
-      <td>2</td>
-      <td>113781</td>
-      <td>151.5500</td>
-      <td>C22 C26</td>
-      <td>S</td>
-      <td>NaN</td>
-      <td>135.0</td>
-      <td>Montreal, PQ / Chesterville, ON</td>
+      <td>4</td>
+      <td>10007155651</td>
+      <td>VANTHOURENHOUT Michael</td>
+      <td>BELGIUM</td>
+      <td>MNG</td>
+      <td>26</td>
+      <td>1610</td>
+      <td>2019</td>
+      <td>cyclocross</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>1</td>
-      <td>0</td>
-      <td>Allison, Mrs. Hudson J C (Bessie Waldo Daniels)</td>
-      <td>female</td>
-      <td>25.0000</td>
-      <td>1</td>
-      <td>2</td>
-      <td>113781</td>
-      <td>151.5500</td>
-      <td>C22 C26</td>
-      <td>S</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Montreal, PQ / Chesterville, ON</td>
+      <td>5</td>
+      <td>10006118660</td>
+      <td>VAN DER HAAR Lars</td>
+      <td>NETHERLANDS</td>
+      <td>TFL</td>
+      <td>28</td>
+      <td>1431</td>
+      <td>2019</td>
+      <td>cyclocross</td>
     </tr>
   </tbody>
 </table>
-
+<br> </br>
 
 <h2> Question 1 </h2>
 <p> Import the Pandas module. </p>
@@ -244,60 +197,9 @@ document.getElementById('err').innerHTML= 'wrong';
 <br> </br>
 <br> </br>
 <h2> Question 2 </h2>
-<p> Import the NumPy module. </p>
-
-<input type="text2" id="test2" size="25">
-<input type="button" value="click" onclick="zz()" class="btn btn-outline-primary btn-md"><span id="err2"></span>
-
-<script>
-function zz()
-{
-var a=document.getElementById("test2");
-if((a.value=="import numpy as np")||(a.value=="import numpy"))
-{
-document.getElementById('err2').innerHTML= 'correct';
-}
-else
-{
-document.getElementById('err2').innerHTML= 'wrong';
-
-}
-
-}
-</script>
-
-<br> </br>
-<br> </br>
-<h2> Question 3 </h2>
-<p> Import the matplotlib.pyplot module. </p>
-
-<input type="text3" id="test3" size="25">
-<input type="button" value="click" onclick="zzz()" class="btn btn-outline-primary btn-md"><span id="err3"></span>
-
-<script>
-function zzz()
-{
-var a=document.getElementById("test3");
-if((a.value=="import matplotlib.pyplot as plt")||(a.value=="import matplotlib.pyplot"))
-{
-document.getElementById('err3').innerHTML= 'correct';
-}
-else
-{
-document.getElementById('err3').innerHTML= 'wrong';
-
-}
-
-}
-</script>
-
-<br> </br>
-<br> </br>
-<h2> Question 4 </h2>
-<p> Read in the titanic3.xls data set. The only tab is called  <i>titanic3</i>. Make sure NAs are labeled 'NA'. </p> 
-<p> When you read in the dataframe, call it <i>titanic_df</i>. Also, make sure index_col is set to None. </p>
-<p> The order we want the <i>read_excel</i> function is: filename, tab name, index_col, and na_values. </p>
-<p> <i>Hint: We refer to Pandas as pd. You can find official documentation for read_excel <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html" target="_blank"> here</a> </i></p>
+<p> Read in the uci_cyclocross_rankings_historicals.csv data set. </p> 
+<p> When you read in the dataframe, call it <i>cyclo</i>. No need to include a path to the file. </p>
+<p> <i>Hint: We refer to Pandas as pd. You can find official documentation for read_csv <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html" target="_blank"> here</a> </i></p>
 <input type="text4" id="test4" size="25">
 <input type="button" value="click" onclick="zzzz()" class="btn btn-outline-primary btn-md"><span id="err4"></span>
 
@@ -305,7 +207,7 @@ document.getElementById('err3').innerHTML= 'wrong';
 function zzzz()
 {
 var a=document.getElementById("test4");
-if((a.value=="titanic_df = pd.read_excel('titanic3.xls', 'titanic3', index_col=None, na_values=['NA'])")||(a.value=="titanic_df = pd.read_excel('titanic3.xls','titanic3',index_col=None,na_values=['NA'])")||(a.value=="titanic_df=pd.read_excel('titanic3.xls','titanic3',index_col=None,na_values=['NA'])")||(a.value=="titanic_df=pd.read_excel('titanic3.xls', 'titanic3', index_col=None, na_values=['NA'])"))
+if((a.value=="cyclo = pd.read_csv('uci_cyclocross_rankings_historicals.csv')")||(a.value=="cyclo=pd.read_csv('uci_cyclocross_rankings_historicals.csv')"))
 {
 document.getElementById('err4').innerHTML= 'correct';
 }
@@ -320,8 +222,8 @@ document.getElementById('err4').innerHTML= 'wrong';
 
 <br> </br>
 <br> </br>
-<h2> Question 5 </h2>
-<p> Use the head function to look at the <i>titanic_df</i> DataFrame. </p>
+<h2> Question 3 </h2>
+<p> Use the head function to look at the <i>cyclo</i> DataFrame. </p>
 
 <input type="text5" id="test5" size="25">
 <input type="button" value="click" onclick="zzzzz()" class="btn btn-outline-primary btn-md"><span id="err5"></span>
@@ -330,7 +232,7 @@ document.getElementById('err4').innerHTML= 'wrong';
 function zzzzz()
 {
 var a=document.getElementById("test5");
-if((a.value=="titanic_df.head()")||(a.value=="titanic_df.head()"))
+if((a.value=="cyclo.head()")||(a.value=="cyclo.head()"))
 {
 document.getElementById('err5').innerHTML= 'correct';
 }
@@ -345,8 +247,8 @@ document.getElementById('err5').innerHTML= 'wrong';
 
 <br> </br>
 <br> </br>
-<h2> Question 6 </h2>
-<p> Use the describe function to learn more about the <i>titanic_df</i> dataset. </p>
+<h2> Question 4 </h2>
+<p> Create a dataframe called <i>cyclo_2018</i> which subsets <i>cyclo</i> for only rows where the 'year' column is 2018. </p>
 
 <input type="text6" id="test6" size="25">
 <input type="button" value="click" onclick="z6()" class="btn btn-outline-primary btn-md"><span id="err6"></span>
@@ -355,7 +257,7 @@ document.getElementById('err5').innerHTML= 'wrong';
 function z6()
 {
 var a=document.getElementById("test6");
-if((a.value=="titanic_df.describe()")||(a.value=="titanic_df.describe()"))
+if((a.value=="cyclo_2018 = cyclo[cyclo['year'] == 2018]")||(a.value=="cyclo_2018 = cyclo[cyclo['year']==2018]")||(a.value=="cyclo_2018=cyclo[cyclo['year']==2018]"))
 {
 document.getElementById('err6').innerHTML= 'correct';
 }
@@ -371,8 +273,8 @@ document.getElementById('err6').innerHTML= 'wrong';
 
 <br> </br>
 <br> </br>
-<h2> Question 7 </h2>
-<p> Drop the 'ticket', 'cabin', 'boat', and 'body' columns in this order from the <i>titanic_df</i> dataframe. </p>
+<h2> Question 5 </h2>
+<p> Similar to question 4, create a dataframe called <i>cyclo_2019</i> which subsets <i>cyclo</i> for only rows where the 'year' column is 2019. </p>
 
 <input type="text7" id="test7" size="25">
 <input type="button" value="click" onclick="z7()" class="btn btn-outline-primary btn-md"><span id="err7"></span>
@@ -381,7 +283,7 @@ document.getElementById('err6').innerHTML= 'wrong';
 function z7()
 {
 var a=document.getElementById("test7");
-if((a.value=="titanic_df = titanic_df.drop(['ticket','cabin','boat','body'],axis=1)")||(a.value=="titanic_df = titanic_df.drop(['ticket','cabin','boat','body'], axis = 1)")||(a.value=="titanic_df=titanic_df.drop(['ticket','cabin','boat','body'],axis=1)")||(a.value=="titanic_df = titanic_df.drop(['ticket','cabin','boat','body'], axis=1)"))
+if((a.value=="cyclo_2019 = cyclo[cyclo['year'] == 2019]")||(a.value=="cyclo_2019 = cyclo[cyclo['year']==2019]")||(a.value=="cyclo_2019=cyclo[cyclo['year']==2019]"))
 {
 document.getElementById('err7').innerHTML= 'correct';
 }
@@ -396,9 +298,10 @@ document.getElementById('err7').innerHTML= 'wrong';
 
 <br> </br>
 <br> </br>
-<h2> Question 8 </h2>
-<p> Let's make a bar plot using Pandas on the 'survived' column using value counts. </p>
-<p><i> Hint: we refer to Pandas as pd </i> </p>
+<h2> Question 6 </h2>
+<p> Use a left merge to merge <i>cyclo_2018</i> with <i>cyclo_2019</i>. In other words, merge <i>cyclo_2018</i> to <i>cyclo_2019</i> (left side) and call the dataframe <i>cyclo_both</i> </p>
+<p> Use 'UCI ID' as the variable to merge on.</p>
+<p><i> Hint: we refer to Pandas as pd and put 'how' before 'on' in the merge function. </i> </p>
 
 <input type="text8" id="test8" size="25">
 <input type="button" value="click" onclick="z8()" class="btn btn-outline-primary btn-md"><span id="err8"></span>
@@ -407,7 +310,7 @@ document.getElementById('err7').innerHTML= 'wrong';
 function z8()
 {
 var a=document.getElementById("test8");
-if((a.value=="pd.value_counts(titanic_df['survived']).plot.bar()")||(a.value=="pd.value_counts(titanic_df['survived']).plot.bar()"))
+if((a.value=="cyclo_both = pd.merge(cyclo_2019, cyclo_2018, how='left', on='UCI ID')")||(a.value=="cyclo_both = pd.merge(cyclo_2019,cyclo_2018,how='left',on='UCI ID')")||(a.value=="cyclo_both=pd.merge(cyclo_2019,cyclo_2018,how='left',on='UCI ID')"))
 {
 document.getElementById('err8').innerHTML= 'correct';
 }
@@ -422,9 +325,9 @@ document.getElementById('err8').innerHTML= 'wrong';
 
 <br> </br>
 <br> </br>
-<h2> Question 9 </h2>
-<p> Let's have a look at the mean of the people that survived, i.e the 'survived' column. </p>
-<p><i> Hint: Don't make an object.</i> </p>
+<h2> Question 7 </h2>
+<p> Let's append <i>cyclo_2018</i> with <i>cyclo_2019</i> into a dataframe called <i>cyclo_append</i> </p>
+<p><i> Hint: Append <i>cyclo_2019</i> to <i>cyclo_2018</i> dataframe </p>
 
 <input type="text9" id="test9" size="25">
 <input type="button" value="click" onclick="z9()" class="btn btn-outline-primary btn-md"><span id="err9"></span>
@@ -433,7 +336,7 @@ document.getElementById('err8').innerHTML= 'wrong';
 function z9()
 {
 var a=document.getElementById("test9");
-if((a.value=="titanic_df['survived'].mean()")||(a.value=="titanic_df['survived'].mean()"))
+if((a.value=="cyclo_append = cyclo_2018.append(cyclo_2019)")||(a.value=="cyclo_append=cyclo_2018.append(cyclo_2019)"))
 {
 document.getElementById('err9').innerHTML= 'correct';
 }
@@ -448,9 +351,9 @@ document.getElementById('err9').innerHTML= 'wrong';
 
 <br> </br>
 <br> </br>
-<h2> Question 10 </h2>
-<p> Let's group our data by the sex of the passenger and see what the means are. </p>
-<p><i> Hint: Don't make an object.</i> </p>
+<h2> Question 8 </h2>
+<p> Let's use the dataframe <i>cyclo_both<i/> from eariler to only view riders whom have Points_x greater than Points_y using the head function.</p>
+<p> In other words lets preview the data using the head function to see what riders earned more points in 2019 versus 2018. </p>
 <input type="text10" id="test10" size="25">
 <input type="button" value="click" onclick="z10()" class="btn btn-outline-primary btn-md"><span id="err10"></span>
 
@@ -458,68 +361,13 @@ document.getElementById('err9').innerHTML= 'wrong';
 function z10()
 {
 var a=document.getElementById("test10");
-if((a.value=="titanic_df.groupby(['sex']).mean()")||(a.value=="titanic_df.groupby(['sex']).mean()"))
+if((a.value=="cyclo_both[cyclo_both['Points_x'] > cyclo_both['Points_y']].head()")||(a.value=="cyclo_both[cyclo_both['Points_x']>cyclo_both['Points_y']].head()"))
 {
 document.getElementById('err10').innerHTML= 'correct';
 }
 else
 {
 document.getElementById('err10').innerHTML= 'wrong';
-
-}
-
-}
-</script>
-
-<br> </br>
-<br> </br>
-<h2> Question 11 </h2>
-<p> Let's group the data by sex and class of the passenger in that order and see what the means are. </p>
-<p><i> Hint: Don't make an object.</i> </p>
-<p><i> Another Hint: 'pclass' is the class column. </i> </p>
-
-<input type="text11" id="test11" size="25">
-<input type="button" value="click" onclick="z11()" class="btn btn-outline-primary btn-md"><span id="err11"></span>
-
-<script>
-function z11()
-{
-var a=document.getElementById("test11");
-if((a.value=="titanic_df.groupby(['sex','pclass']).mean()")||(a.value=="titanic_df.groupby(['sex', 'pclass']).mean()"))
-{
-document.getElementById('err11').innerHTML= 'correct';
-}
-else
-{
-document.getElementById('err11').innerHTML= 'wrong';
-
-}
-
-}
-</script>
-
-
-<br> </br>
-<br> </br>
-<h2> Question 12 </h2>
-<p> Let's look at the sex and the class in but only look at those under 18 years old and see what the means are. </p>
-<p><i> Hint: Don't make an object and do this in one line of code.</i> </p>
-<p><i> Hint: The group by order should be sex then class.</i> </p>
-
-<input type="text12" id="test12" size="25">
-<input type="button" value="click" onclick="z12()" class="btn btn-outline-primary btn-md"><span id="err12"></span>
-
-<script>
-function z12()
-{
-var a=document.getElementById("test12");
-if((a.value=="titanic_df[titanic_df['age']<18].groupby(['sex','pclass']).mean()")||(a.value=="titanic_df[titanic_df['age'] < 18].groupby(['sex', 'pclass']).mean()"))
-{
-document.getElementById('err12').innerHTML= 'correct';
-}
-else
-{
-document.getElementById('err12').innerHTML= 'wrong';
 
 }
 
@@ -554,7 +402,7 @@ document.getElementById('err12').innerHTML= 'wrong';
               <div class="col-md-6 col-lg-6">
                 <ul class="list-unstyled">
                   <li><a href="" class="smoothscroll">Home</a></li>
-                  <li><a href="#what-we-do-section" class="smoothscroll">Titanic Tutorial</a></li>
+                  <li><a href="https://www.pandaszoo.com/#what-we-do-section" class="smoothscroll">Titanic Tutorial</a></li>
                   <li><a href="https://www.pandaszoo.com/cycling.html" class="smoothscroll">Cycling Tutorial</a></li>
 			   <!--<li><a href="https://www.pandaszoo.com/cycling.html" class="nav-link">Cycling Tutorial</a></li>
                   <li><a href="#team-section"  class="smoothscroll">Team</a></li> -->
