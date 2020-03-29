@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161835295-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-161835295-1');
+</script>
+
+    <title>PandasZoo</title>
+	<meta name="description" content="PandasZoo - Practice and Learn Pandas in Stages. Practice Pandas problems online.">
+	<meta name="keywords" content="pandaszoo, pandas, python, python sqlzoo, pandas practice problems">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    
+    
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    
+
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+    
+    
+    <div class="site-navbar-wrap">
+      
+      <div class="site-navbar site-navbar-target js-sticky-header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6 col-md-4">
+              <h1 class="my-0 site-logo"><a href="index.html">PandasZoo<span class="text-primary">.</span> </a></h1>
+            </div>
+            <div class="col-6 col-md-8">
+              <nav class="site-navigation text-right" role="navigation">
+                <div class="container">
+
+                  <div class="d-inline-block d-lg-block ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black">
+                    <span class="icon-menu h3"></span> <span class="menu-text">Menu</span>
+                  </a></div>
+
+                  <ul class="site-menu main-menu js-clone-nav d-none d-lg-none">
+                    <li><a href="https://www.pandaszoo.com" class="nav-link">Home</a></li>
+                    <li><a href="https://www.pandaszoo.com/#what-we-do-section" class="nav-link">Titanic Tutorial</a></li>
+                    <li><a href="https://www.pandaszoo.com/cycling.html" class="nav-link">Cycling Tutorial</a></li>
+                    <li><a href="#dailybirths" class="nav-link">Daily Births Tutorial</a></li>
+                 <!--   <li><a href="#studio-section" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact-section" class="nav-link">Contact</a></li> -->
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- END .site-navbar-wrap -->
+    
+
+
+    <div class="site-section" id="dailybirths">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6 section-title">
+            <span class="sub-title mb-2 d-block">Pandas Tutorials</span>
+            <h2 class="title text-primary">Pandas Tutorial 3 - Daily Births.</h2>
+          </div>
+        </div>
+        <div class="pr-lg-5">
+            <h3>Pandas Basics: Time Series exercises</h3>
+            
+<p> The third tutorial is time series focused. The questions we use for this tutorial are based on a time series dataset depicting the total number of female births recording in California, USA during the year of 1959.
+This is a basic time series dataset, with only the date ("dd/mm/yyyy" format), and the number of births. There are 365 records in total.
+</p>
+<p> The data set can be found 
+<a href="https://raw.githubusercontent.com/jbrownlee/Datasets/master/daily-total-female-births.csv" target="_blank">here</a>.
+ </p>
+ <p> Note: At PandasZoo we use single quotes for our answers. </p>
+ <p> This is a sample of what the data set looks like: </p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Date</th>
+      <th>Births</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1959-01-01</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1959-01-02</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1959-01-03</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1959-01-04</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1959-01-05</td>
+      <td>44</td>
+    </tr>
+  </tbody>
+</table>
+<br> </br>
+
+<h2> Question 1 </h2>
+<p> Import the Pandas module. </p>
+<p> <i>Hint: We put in an example answer that you should try typing in.</i></p>
+
+<input type="text" id="test" placeholder="import pandas as pd"  size="25">
+<input type="button" value="click" onclick="z()" class="btn btn-outline-primary btn-md"><span id="err"></span>
+
+<script>
+function z()
+{
+var a=document.getElementById("test");
+if((a.value=="import pandas as pd")||(a.value=="import pandas"))
+{
+document.getElementById('err').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+<br> </br>
+<br> </br>
+<h2> Question 2 </h2>
+<p> Read in the daily births data set. </p> 
+<p> Assume I already ran the following code: </p> 
+<p><code> url = 'https://raw.githubusercontent.com/jbrownlee/Datasets/master/daily-total-female-births.csv' </code></p> 
+<p> When you read in the dataframe, call it <i>df</i>. Use the <i>url</i> object that was already created. </p>
+<p> <i>Hint: We refer to Pandas as pd. You can find official documentation for read_csv <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html" target="_blank"> here</a> </i></p>
+<p> <i>Hint #2: Make sure to include the following in your read_csv function: </i> </p>
+<p> <code> error_bad_lines=False </code> </p>
+<input type="text4" id="test4" size="25">
+<input type="button" value="click" onclick="zzzz()" class="btn btn-outline-primary btn-md"><span id="err4"></span>
+
+<script>
+function zzzz()
+{
+var a=document.getElementById("test4");
+if((a.value=="df = pd.read_csv(url, error_bad_lines=False)")||
+(a.value=="df=pd.read_csv(url,error_bad_lines=False)")||
+(a.value=="df = pd.read_csv(url,error_bad_lines=False)"))
+{
+document.getElementById('err4').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err4').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+<br> </br>
+<br> </br>
+<h2> Question 3 </h2>
+<p> Use the head function to look at the <i>df </i> DataFrame. </p>
+
+<input type="text5" id="test5" size="25">
+<input type="button" value="click" onclick="zzzzz()" class="btn btn-outline-primary btn-md"><span id="err5"></span>
+
+<script>
+function zzzzz()
+{
+var a=document.getElementById("test5");
+if((a.value=="df.head()")||(a.value=="df.head()"))
+{
+document.getElementById('err5').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err5').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+<br> </br>
+<br> </br>
+<h2> Question 4 </h2>
+<p> Plot the 'Births' column from the <i>df </i> DataFrame.</p>
+
+<input type="text6" id="test6" size="25">
+<input type="button" value="click" onclick="z6()" class="btn btn-outline-primary btn-md"><span id="err6"></span>
+
+<script>
+function z6()
+{
+var a=document.getElementById("test6");
+if((a.value=="df['Births'].plot()")||
+(a.value=="df['Births'].plot()")||
+(a.value=="df['Births'].plot()"))
+{
+document.getElementById('err6').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err6').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+
+<br> </br>
+<br> </br>
+<h2> Question 5 </h2>
+<p> See what the index looks like for <i>df </i> </p>
+
+<input type="text7" id="test7" size="25">
+<input type="button" value="click" onclick="z7()" class="btn btn-outline-primary btn-md"><span id="err7"></span>
+
+<script>
+function z7()
+{
+var a=document.getElementById("test7");
+if((a.value=="df.index")||
+(a.value=="df.index")||
+(a.value=="df.index"))
+{
+document.getElementById('err7').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err7').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+<br> </br>
+<br> </br>
+<h2> Question 6 </h2>
+<p> Plot the range 0:30 for 'Births' in the <i>df </i> DataFrame. In other words, plot the first 31 entries for the 'Birth' column. </p>
+
+<input type="text8" id="test8" size="25">
+<input type="button" value="click" onclick="z8()" class="btn btn-outline-primary btn-md"><span id="err8"></span>
+
+<script>
+function z8()
+{
+var a=document.getElementById("test8");
+if((a.value=="df[0:30]['Births'].plot()")||
+(a.value=="df[0:30]['Births'].plot()")||
+(a.value=="df[0:30]['Births'].plot()")
+)
+{
+document.getElementById('err8').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err8').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+<br> </br>
+<br> </br>
+<h2> Question 7 </h2>
+<p> Let's plot the rolling mean of 'Births' using the <i>rolling</i> funciton. </p>
+<p><i> Hint: Use a minimum of 10 periods, a window of 60 and set center to false. </i></p>
+
+<input type="text9" id="test9" size="25">
+<input type="button" value="click" onclick="z9()" class="btn btn-outline-primary btn-md"><span id="err9"></span>
+
+<script>
+function z9()
+{
+var a=document.getElementById("test9");
+if((a.value=="df['Births'].rolling(min_periods = 10, window=60, center=False).mean().plot()")||
+(a.value=="df['Births'].rolling(min_periods=10, window=60, center=False).mean().plot()")||
+(a.value=="df['Births'].rolling(min_periods=10,window=60,center=False).mean().plot()")||
+(a.value=="df['Births'].rolling(min_periods = 10, window = 60, center = False).mean().plot()")||
+(a.value=="df['Births'].rolling(window=60, min_periods=10, center=False).mean().plot()")||
+(a.value=="df['Births'].rolling(window=60,min_periods=10,center=False).mean().plot()")
+
+)
+{
+document.getElementById('err9').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err9').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+<br> </br>
+<br> </br>
+<h2> Question 8 </h2>
+<p> Let's plot the rolling standard deviation of 'Births' using the <i>rolling</i> funciton. </p>
+<p><i> Hint: Use a minimum of 10 periods, a window of 60 and set center to false. </i></p>
+<input type="text10" id="test10" size="25">
+<input type="button" value="click" onclick="z10()" class="btn btn-outline-primary btn-md"><span id="err10"></span>
+
+<script>
+function z10()
+{
+var a=document.getElementById("test10");
+if((a.value=="df['Births'].rolling(min_periods = 10, window=60, center=False).std().plot()")||
+(a.value=="df['Births'].rolling(min_periods=10, window=60, center=False).std().plot()")||
+(a.value=="df['Births'].rolling(min_periods=10,window=60,center=False).std().plot()")||
+(a.value=="df['Births'].rolling(min_periods = 10, window = 60, center = False).std().plot()")||
+(a.value=="df['Births'].rolling(window=60, min_periods=10, center=False).std().plot()")||
+(a.value=="df['Births'].rolling(window=60,min_periods=10,center=False).std().plot()")
+)
+{
+document.getElementById('err10').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err10').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+				 
+ <br> </br>
+ <br> </br>
+ 
+      </div>
+    </div>
+     
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="row mb-5">
+              <div class="col-12">
+                <h3 class="footer-heading mb-4">About Us</h3>
+                <p>PandasZoo is a place to practice Python and Pandas. Created by Peter Brendan to scratch his own itch. Feel free to <a href="mailto:peteribrendan@gmail.com?Subject=Howdy">contact him</a> for suggestions or recommended edits. </p>
+              </div>
+            </div>
+            
+            
+          </div>
+          <div class="col-lg-3 ml-auto">
+           
+            <div class="row mb-5">
+              <div class="col-md-12">
+                <h3 class="footer-heading mb-4">Navigation</h3>
+              </div>
+              <div class="col-md-6 col-lg-6">
+                <ul class="list-unstyled">
+                  <li><a href="" class="smoothscroll">Home</a></li>
+                  <li><a href="https://www.pandaszoo.com/#what-we-do-section" class="smoothscroll">Titanic Tutorial</a></li>
+                  <li><a href="https://www.pandaszoo.com/cycling.html" class="smoothscroll">Cycling Tutorial</a></li>
+			      <li><a href="https://www.pandaszoo.com/daily_births.html" class="nav-link">Daily Births Tutorial</a></li>
+              <!--    <li><a href="#team-section"  class="smoothscroll">Team</a></li> -->
+                </ul>
+              </div>
+              
+            </div>
+            
+          </div>
+          
+          
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="mb-4">
+                  <a href="https://twitter.com/peteriBrendan" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                  <a href="https://www.linkedin.com/in/peter-brendan-3b31a722" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                  <a href="https://twitter.com/peteriBrendan" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                  <a href="https://www.linkedin.com/in/peter-brendan-3b31a722" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                </div>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/stickyfill.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+
+     
+  </body>
+</html>
