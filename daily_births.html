@@ -309,7 +309,7 @@ document.getElementById('err8').innerHTML= 'wrong';
 <br> </br>
 <br> </br>
 <h2> Question 7 </h2>
-<p> Let's plot the rolling mean of 'Births' using the <i>rolling</i> funciton. </p>
+<p> Let's plot the rolling mean of 'Births' using the <i>rolling</i> function. </p>
 <p><i> Hint: Use a minimum of 10 periods, a window of 60 and set center to false. </i></p>
 
 <input type="text9" id="test9" size="25">
@@ -342,7 +342,7 @@ document.getElementById('err9').innerHTML= 'wrong';
 <br> </br>
 <br> </br>
 <h2> Question 8 </h2>
-<p> Let's plot the rolling standard deviation of 'Births' using the <i>rolling</i> funciton. </p>
+<p> Let's plot the rolling standard deviation of 'Births' using the <i>rolling</i> function. </p>
 <p><i> Hint: Use a minimum of 10 periods, a window of 60 and set center to false. </i></p>
 <input type="text10" id="test10" size="25">
 <input type="button" value="click" onclick="z10()" class="btn btn-outline-primary btn-md"><span id="err10"></span>
@@ -430,6 +430,105 @@ document.getElementById('err12').innerHTML= 'correct';
 else
 {
 document.getElementById('err12').innerHTML= 'wrong';
+
+}
+
+}
+</script> 
+<br> </br>
+<br> </br>
+
+<h2> Question 11 </h2>
+<p> Let's randomly sample 50 rows from <i>df</i> and call it <i>dfb</i>.</p>
+
+<input type="text13" id="test13" size="25">
+<input type="button" value="click" onclick="z13()" class="btn btn-outline-primary btn-md"><span id="err13"></span>
+
+<script>
+function z13()
+{
+var a=document.getElementById("test13");
+if((a.value=="dfb = df.sample(n=50)")||
+(a.value=="dfb =df.sample(n=50)")||
+(a.value=="dfb=df.sample(n=50)")||
+(a.value=="dfb = df.sample(n = 50)")||
+(a.value=="dfb = df.sample(n =50)")||
+(a.value=="dfb = df.sample(n= 50)")||
+(a.value=="dfb = df.sample(n = 50)")
+)
+{
+
+document.getElementById('err13').innerHTML= '<font size="7"> &#128512 </font>';
+}
+else
+{
+document.getElementById('err13').innerHTML= 'wrong';
+
+}
+
+}
+</script> 
+<br> </br>
+<br> </br>
+
+<h2> Question 12 </h2>
+<p> Let's pull the 10 days with the largest number of births from <i>df</i>.</p>
+
+<input type="text14" id="test14" size="25">
+<input type="button" value="click" onclick="z14()" class="btn btn-outline-primary btn-md"><span id="err14"></span>
+
+<script>
+function z14()
+{
+var a=document.getElementById("test14");
+if((a.value=="df.nlargest(10, 'Births')")||
+(a.value=="df.nlargest(10,'Births')")||
+(a.value=="df.nlargest(10,'Births')")||
+(a.value=="df.nlargest(10,'Births')")||
+(a.value=="df.nlargest(10,'Births')")||
+(a.value=="df.nlargest(10,'Births')")||
+(a.value=="df.nlargest(10,'Births')")
+)
+{
+
+document.getElementById('err14').innerHTML= '<font size="7"> &#128512 </font>';
+}
+else
+{
+document.getElementById('err14').innerHTML= 'wrong';
+
+}
+
+}
+</script> 
+<br> </br>
+<br> </br>
+
+<h2> Question 13 </h2>
+<p> Use the pivot function to have a column for every date. Let 'birthday' be the index and 'Births' be the value.</p>
+
+<input type="text15" id="test15" size="25">
+<input type="button" value="click" onclick="z15()" class="btn btn-outline-primary btn-md"><span id="err15"></span>
+
+<script>
+function z15()
+{
+var a=document.getElementById("test15");
+if((a.value=="df.pivot(index='birthday',columns='Date', values='Births')")||
+(a.value=="df.pivot(index='birthday',columns='Date',values='Births')")||
+(a.value=="df.pivot(index='birthday', columns='Date', values='Births')")||
+(a.value=="df.pivot(columns='Date',values='Births',index='birthday')")||
+(a.value=="df.pivot(columns='Date', values='Births', index='birthday')")||
+(a.value=="df.pivot(values='Births',columns='Date',index='birthday')")||
+(a.value=="df.pivot(values='Births', columns='Date', index='birthday')")
+)
+{
+
+document.getElementById('err15').innerHTML= '<font size="7"> &#128512 </font>';
+}
+else
+{
+document.getElementById('err15').innerHTML= 'wrong';
 
 }
 
